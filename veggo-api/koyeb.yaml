@@ -1,0 +1,27 @@
+# Koyeb Service Configuration for Veggo Backend
+type: web
+name: veggo-api
+regions:
+  - sin # Singapore / East Asia closest to Sri Lanka
+ports:
+  - port: 8000
+    path: /
+    protocol: http
+routes:
+  - path: /
+    port: 8000
+env:
+  PORT: "8000"
+  DATABASE_NAME: "veggo"
+  CURRENCY: "LKR"
+  STORE_NAME: "Veggo"
+  BASE_DELIVERY_FEE: "150"
+  FREE_DELIVERY_THRESHOLD: "5000"
+  PER_KM_DELIVERY_FEE: "50"
+  MAX_DELIVERY_DISTANCE_KM: "25"
+  ALLOWED_ORIGINS: "*"
+instance_type: nano
+health_checks:
+  - http:
+      path: /health
+      port: 8000

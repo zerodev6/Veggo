@@ -1,0 +1,6 @@
+{
+  "name": "VEGGO Sri Lanka Grocery API",
+  "description": "Production-ready vegetable and grocery ordering API and management platform for Sri Lanka, deployable to Koyeb on port 8000.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,3 @@
+"""
+Veggo Domain Models
+"""
